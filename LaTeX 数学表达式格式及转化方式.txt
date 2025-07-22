@@ -1,0 +1,93 @@
+=====================
+LaTeX数学表达式完整指南
+=====================
+
+一、基本数学模式
+----------------
+1. 行内公式
+   $公式$ 或 \(公式\)
+   例: 能量公式 $E=mc^2$
+
+2. 行间公式
+   \[公式\] 或 \begin{equation}公式\end{equation}
+   例: 
+   \[ \int_a^b f(x)dx \]
+
+二、希腊字母
+-----------
+\alpha β \Gamma Δ \theta \Lambda \pi \Sigma \omega \Omega
+(完整列表: α-ω大小写均有对应命令)
+
+三、运算符与符号
+--------------
+1. 基本运算
+   + - \times \div \cdot \pm \mp
+
+2. 关系符号
+   < > = \leq \geq \neq \approx \equiv \propto \in \subset
+
+3. 箭头
+   \rightarrow \Leftrightarrow \mapsto
+
+四、上下标与分数
+--------------
+1. 上下标
+   x^2 x_i x_{ij} x^{n^k}
+
+2. 分数
+   \frac{分子}{分母} \dfrac{大分数}{显示}
+
+五、根式与积分
+------------
+1. 根式
+   \sqrt{x} \sqrt[n]{x}
+
+2. 积分/求和
+   \int_a^b \sum_{i=1}^n \prod \oint
+
+六、矩阵与括号
+------------
+1. 矩阵
+   \begin{matrix} a & b \\ c & d \end{matrix}
+   pmatrix(小括号) bmatrix[中括号]
+
+2. 括号自适应
+   \left( \frac{x}{y} \right)
+
+七、转换工具
+----------
+1. 识别工具
+   - Mathpix Snip(图片转LaTeX)
+   - Detexify(手绘识别)
+
+2. 转换工具
+   - Pandoc(格式转换)
+   - MathType(导出LaTeX)
+
+3. 编程库
+   - Python: sympy.latex()
+   - JavaScript: MathJax/Katex
+
+八、实用技巧
+----------
+1. 多行公式用\begin{align}环境
+2. 文本公式用\text{}包裹
+3. 空格用\, \: \;控制
+4. 符号列表: https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
+
+九、完整示例
+----------
+\[
+\frac{\partial u}{\partial t} = \alpha \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} \right)
+\]
+
+\begin{equation}
+\mathbf{F} = m \cdot \mathbf{a} = \frac{d}{dt}(m\mathbf{v})
+\end{equation}
+
+十、注意事项
+----------
+1. 所有命令以反斜线开头
+2. 空格在数学模式中通常被忽略
+3. 花括号{}用于分组
+4. 特殊符号需转义: \# \$ \% \& \_
